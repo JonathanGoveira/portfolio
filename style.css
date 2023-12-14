@@ -1,3 +1,18 @@
-﻿body
-{
+﻿.cabecalho {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.experiencia {
+    display: flex;
+    flex: 2 200px;
+    align-items: center;
+}
+
+.portifolio {
+    display: flex;
+    flex: 2 300px;
+    flex-wrap: wrap;
 }
