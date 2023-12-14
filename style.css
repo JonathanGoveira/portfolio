@@ -1,18 +1,28 @@
-﻿.cabecalho {
+﻿.flex {
     display: flex;
-    align-items: flex-end;
+    border: 1px solid #ccc;
+}
+
+.cabecalho {
+    /* align-items: flex-end; */
     justify-content: space-between;
     flex: 1;
 }
-
-.experiencia {
-    display: flex;
-    flex: 2 200px;
-    align-items: center;
+.nome {
+    font-size: 2vw;
 }
 
-.portifolio {
-    display: flex;
-    flex: 2 300px;
-    flex-wrap: wrap;
+.texto {
+    font-size: 1vw;
+}
+
+.experiencia {
+    flex: 2 20vh;
+    height: 20vh;
+}
+
+.portfolio {
+    font-size: 1vw;
+    flex: 2 50vh;
+    height: 50vh;
 }
