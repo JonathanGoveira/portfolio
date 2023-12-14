@@ -7,6 +7,7 @@
     /* align-items: flex-end; */
     justify-content: space-between;
     flex: 1;
+    color: tomato;
 }
 .nome {
     font-size: 2vw;
