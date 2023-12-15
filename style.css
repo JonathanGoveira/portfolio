@@ -1,29 +1,51 @@
-﻿.flex {
-    display: flex;
-    border: 1px solid #ccc;
+﻿* {
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.cabecalho {
-    /* align-items: flex-end; */
-    justify-content: space-between;
-    flex: 1;
-    color: tomato;
-}
-.nome {
-    font-size: 2vw;
+body {
+    background-color: #269eb6;
+    color: #171A21;
 }
 
-.texto {
-    font-size: 1vw;
+body * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 160%;
 }
 
-.experiencia {
-    flex: 2 20vh;
-    height: 20vh;
+header {
+    text-align: center;
+    color: #D6D1CD;
+    margin-top: 32px;
 }
 
-.portfolio {
-    font-size: 1vw;
-    flex: 2 50vh;
-    height: 50vh;
+header h1 {
+    font-style: italic;
+}
+
+h2 {
+    color: #D6D1CD;
+    font-weight: 500;
+    font-size: 25px;
+    /*font: bolder;*/
+    line-height: 50px;
+}
+
+main {
+    display: block;
+    max-width: 580px;
+    width: 80vw;
+    margin: 50px auto;
+}
+
+section {
+    color: #171A21;
+    margin: 0 0 30px 0;
+}
+
+section div {
+    background-color: #93cdd974;
+    /* background-color: #e56b6f38; */
+    padding: 25px 30px 30px;
+    border-radius: 45px;
 }
