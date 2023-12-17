@@ -1,11 +1,214 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jonathan Gonçalves text</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #269eb6;
+            color: #171A21;
+        }
+
+        body * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 160%;
+        }
+
+        header {
+            text-align: center;
+            color: #D6D1CD;
+            margin-top: 22px;
+        }
+
+        header h1 {
+            font-style: italic;
+        }
+
+        h2 {
+            color: #D6D1CD;
+            font-weight: 500;
+            font-size: 25px;
+            /*font: bolder;*/
+            line-height: 50px;
+        }
+
+        main {
+            display: block;
+            max-width: 580px;
+            width: 80vw;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+
+        section {
+            color: #171A21;
+        }
+
+        .section {
+            background-color: #93cdd974;
+            padding: 15px 30px 30px;
+            border-radius: 45px;
+            /*             overflow: hidden; */
+        }
+
+        ul li {
+            list-style: circle;
+        }
+
+        ol {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            text-align: center;
+            gap: 35px;
+            margin: 0 0 0 -35px;
+        }
+
+        li:hover {
+            text-decoration: underline #D6D1CD;
+        }
+
+        a:hover {
+            color: #0ec4ba;
+        }
+
+        .class-contact img {
+            width: 30px;
+            height: 30px;
+        }
+
+        #footer {
+            text-align: center;
+            color: #D6D1CD;
+            font-style: oblique;
+            font-weight: 700;
+            font-size: 12px;
+        }
+
+
+
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -22,8 +225,10 @@
     </header>
 
     <main>
+
+
         <section>
-            <div>
+            <div class="section">
                 <h2>Sobre</h2>
                 <p>Finalizando o ensino superior em Tecnologia de Jogos Digitais pela FATEC com foco em desenvolvimento
                     de jogos, banco de dados e testes de funcionalidades, além de elaboração de roteiro, Pixel Art,
@@ -31,13 +236,195 @@
             </div>
         </section>
         <section>
-            <div>
-                <h2>Portfolio</h2>
-                
-            </div>
-        </section>
-    </main>
+            <h2>Portfolio</h2>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 9</div>
+                    <img src="./imagens/01.png" style="width:100%">
+                    <div class="text">Aparição</div>
+                </div>
 
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 9</div>
+                    <img src="./imagens/02.png" style="width:100%">
+                    <div class="text">Aparição</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 9</div>
+                    <img src="./imagens/03.png" style="width:100%">
+                    <div class="text">Aparição</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 9</div>
+                    <img src="./imagens/04.png" style="width:100%">
+                    <div class="text">Kitchen Masters</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 9</div>
+                    <img src="./imagens/05.png" style="width:100%">
+                    <div class="text">Kitchen Masters</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 9</div>
+                    <img src="./imagens/06.png" style="width:100%">
+                    <div class="text">Kitchen Masters</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">7 / 9</div>
+                    <img src="./imagens/07.png" style="width:100%">
+                    <div class="text">Serra Negra</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">8 / 9</div>
+                    <img src="./imagens/08.png" style="width:100%">
+                    <div class="text">Serra Negra</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">9 / 9</div>
+                    <img src="./imagens/09.png" style="width:100%">
+                    <div class="text">Serra Negra</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
+            </div>
+
+        </section>
+        <section class="class-hardskills section">
+            <div>
+                <h2>Habilidades</h2>
+                <ul>
+                    <li>Python</li>
+                    <li>C#</li>
+                    <li>Game Development</li>
+                    <li>Pixel Art</li>
+                    <li>Game Design</li>
+                    <li>Roteiro</li>
+                    <li>Unity</li>
+                    <li>Git</li>
+                    <li>Scrum</li>
+                </ul>
+            </div>
+        </section> <br>
+
+        <section class="class-softskikks section">
+            <div>
+                <h2>Habilidades Interpessoais</h2>
+                <ul>
+                    <li>Comunicação</li>
+                    <li>Empatia</li>
+                    <li>Paciência</li>
+                    <li>Trabalho em equipe</li>
+                </ul>
+            </div>
+        </section> <br>
+
+        <section class="section">
+            <div>
+                <h2>Experiências Profissionais</h2>
+                <p><b>FATEC São Caetano do Sul - Estagiário de jogos digitais</b></p>
+                <p>Out. 2023 - Nov. 2023</p>
+                <p><b>BGH Studios - Desenvolvedor de jogos freelancer</b></p>
+                <p>Fev. 2022 - Jun. 2022</p>
+                <p><b>Mundivox - Estagiário de tecnologia da informação</b></p>
+                <p>Dez. 2019 - Nov. 2021</p>
+            </div>
+        </section> <br>
+
+        <section class="section">
+            <div>
+                <h2>Educação</h2>
+                <p><b>Tecnologia em Jogos Digitais</b></p>
+                <p>FATEC São Caetano do Sul - Antônio Russo <br>
+                    Ago. 2018 – Em progresso</p>
+            </div>
+        </section> <br>
+
+
+        <section class="class-contact section">
+            <div>
+                <h2>Contate-me!</h2>
+                <p>Se quiser conversar ou discurtir sobre desenvolvimento e mercado de jogos, artes, livros ou
+                    simplismente falar sobre o game que te empolgou durante o final de semana? Por favor entre em
+                    contato comigo! Ficarei feliz de conversar com você.</p> <br>
+                <ol class="contacts">
+                    <li>
+                        <a onclick="cellphone()">
+                            <img src="./imagens/cellphone.png" alt="logo cellphone">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:jonathan.g.oliveira13@gmail.com">
+                            <img src="./imagens/gmail.png" alt="logo gmail">
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/JonathanGoveira">
+                            <img src="./imagens/github.png" alt="logo github">
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/jonathangoncalvesoliveira">
+                            <img src="./imagens/linkedin.png" alt="logo linkedin">
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </section> <br>
+
+
+    </main>
+    <footer id="footer">
+        <p>Made with 💙💙💙 by <a href="https://github.com/JonathanGoveira">Jonathan Gonçalves</a></p>
+        <br> <br>
+    </footer>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+        function cellphone() {
+            window.alert('Meu número de celular: +55 11 97439-7425')
+        }
+    </script>
 
 </body>
 
