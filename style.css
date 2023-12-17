@@ -102,6 +102,7 @@ body {
 
 img {
     vertical-align: middle;
+    border-radius: 45px;
 }
 
 /* Slideshow container */
